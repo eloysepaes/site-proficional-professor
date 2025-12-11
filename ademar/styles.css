@@ -32,11 +32,12 @@ nav a {
 nav a:hover {
     background-color: #3A5F5F;
 }
+
+main {
     padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
 }
-
 h1 {
     color: var(--cor-destaque);
     text-align: center;
