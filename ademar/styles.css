@@ -1,259 +1,129 @@
-/* Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Ademar - Perfil Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container nav-content">
+            <span class="nav-brand">Prof. Ademar</span>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#atendimento">Atendimento</a></li>
+                <li><a href="#curiosidade">Curiosidade</a></li>
+                <li><a href="#turmas">Turmas</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header id="top">
+        <div class="container">
+            <h1>CONHEÇA O PROFESSOR</h1>
+        </div>
+    </header>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #f0f0f0; /* Texto principal em quase branco */
-    background-color: #1a3b33; /* Cor de fundo principal (Verde escuro) */
-    line-height: 1.6;
-}
+    <main>
+        <section class="professor-info">
+            <div class="container info-content">
+                <div class="left-column">
+                    <img src="ademar_profile_pic.jpg" alt="Foto do Professor Ademar" class="profile-pic">
+                    <h2 class="name-tag">ADEMAR</h2>
+                </div>
+                <div class="right-column">
+                    <p>Informações divertidas e relevantes sobre o professor aqui, incluindo:</p>
+                    <ul>
+                        <li><a href="#sobre">Sobre o professor</a></li>
+                        <li><a href="#formacao">Formação Acadêmica</a></li>
+                        <li><a href="#atendimento">Horários de Atendimento</a></li>
+                        <li><a href="#curiosidade">Curiosidades</a></li>
+                        <li><a href="#turmas">Disciplinas e Turmas</a></li>
+                    </ul>
+                    <div class="contact-box">
+                        <h3>Informações de contato</h3>
+                        <p>Email: <a href="mailto:ademar.ferreira@ifpr.edu.br">ademar.ferreira@ifpr.edu.br</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2>SOBRE O PROFESSOR</h2>
+                <div class="about-content">
+                    <img src="ademar_profile_pic_2.jpg" alt="Outra foto do Professor Ademar" class="about-pic">
+                    <p>Doutor em Ciências com ênfase em Tecnologia Nuclear-Aplicações pelo Instituto de Pesquisas Energéticas e Nucleares (IPEN) 2015. Mestre em Física pela Universidade Estadual de Londrina (UEL) 2008. Licenciado em Física pela Universidade Estadual de Ponta Grossa (UEPG) 2005. Foi Bolsista de Desenvolvimento Tecnológico e Industrial B do pelo CNPq no período de 2012 a 2014 com o projeto Desenvolvimento de metodologia para determinação da atividade alfa e beta em água por cintilação líquida. Foi bolsista de iniciação científica no período de 2003 a 2005 trabalhando com as técnicas PTD e EPR/aplicadas a matéria orgânica do solo. Tem experiência na área de Física Nuclear Experimental, com ênfase em radioatividade ambiental, atuando principalmente nos seguintes temas: espectrometria gama, detectores sólidos de traços nucleares e cintilação líquida. Atualmente é professor e pesquisador do Instituto Federal do Paraná Campus Telêmaco Borba. (Texto informado pelo autor)</p>
+                </div>
+                <a href="#top" class="back-to-top">Voltar ao topo</a>
+            </div>
+        </section>
 
-/* --- Header e Título Principal --- */
-header {
-    background-color: #1a3b33;
-    padding-top: 50px;
-    text-align: center;
-}
+        <section id="formacao" class="education-section">
+            <div class="container">
+                <h2>FORMAÇÃO ACADÊMICA</h2>
+                <div class="timeline">
+                    <div class="entry">
+                        <h3 class="period">2008 – 2015</h3>
+                        <p class="degree">Doutor em Ciências com ênfase em Tecnologia Nuclear-Aplicações...</p>
+                    </div>
+                    <div class="entry">
+                        <h3 class="period">2006 – 2008</h3>
+                        <p class="degree">Mestrado em Física...</p>
+                    </div>
+                    <div class="entry">
+                        <h3 class="period">2001 – 2005</h3>
+                        <p class="degree">Graduação em Física...</p>
+                    </div>
+                </div>
+                <a href="#top" class="back-to-top">Voltar ao topo</a>
+            </div>
+        </section>
 
-header h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    padding-bottom: 20px;
-    color: #a4d65a; /* Título em verde destaque */
-    border-bottom: 2px solid #a4d65a;
-    display: inline-block;
-}
+        <section id="atendimento" class="content-section light-bg">
+            <div class="container">
+                <h2>ATENDIMENTO</h2>
+                <p>Aqui você encontrará informações sobre os horários e formas de contato para atendimento ao aluno e orientações. Normalmente, o atendimento é realizado no gabinete (Sala 101) ou por agendamento via e-mail.</p>
+                <div class="schedule-box">
+                    <h3>Horários Semanais</h3>
+                    <p>**Segunda-feira:** 14:00h - 15:30h (Gabinete)</p>
+                    <p>**Quarta-feira:** 09:30h - 11:00h (Online/Agendado)</p>
+                    <p>Por favor, envie um e-mail com antecedência para confirmar a disponibilidade.</p>
+                </div>
+                <a href="#top" class="back-to-top">Voltar ao topo</a>
+            </div>
+        </section>
+        
+        <section id="curiosidade" class="content-section dark-bg">
+            <div class="container">
+                <h2>CURIOSIDADE</h2>
+                <p>O Professor Ademar tem grande paixão por energias e fenômenos nucleares! Sua pesquisa na área de **Radioatividade Ambiental** envolve o estudo de elementos como o Urânio e o Tório no meio ambiente. Um fato interessante é que ele utiliza métodos de contagem de radiação muito sensíveis, como a Espectrometria Gama, que permite identificar a "assinatura" de diferentes radioisótopos naturais.</p>
+                <p>Além da física, é um entusiasta por trilhas e caminhadas em contato com a natureza.</p>
+                <a href="#top" class="back-to-top">Voltar ao topo</a>
+            </div>
+        </section>
+        
+        <section id="turmas" class="content-section light-bg">
+            <div class="container">
+                <h2>TURMAS E DISCIPLINAS</h2>
+                <p>Disciplinas lecionadas no semestre atual:</p>
+                <ul>
+                    <li>**Física I:** (Engenharia X, Turma A) - Conteúdo: Cinemática e Dinâmica.</li>
+                    <li>**Física Nuclear Aplicada:** (Mestrado em Tecnologia) - Conteúdo: Reatores e Proteção Radiológica.</li>
+                    <li>**Introdução à Radioatividade:** (Curso Técnico) - Conteúdo: Tipos de Emissões e Decaimento.</li>
+                </ul>
+                <a href="#top" class="back-to-top">Voltar ao topo</a>
+            </div>
+        </section>
 
-/* --- Seção de Informações do Professor (Topo) --- */
-.professor-info {
-    background-color: #244941; /* Um pouco mais claro que o fundo */
-    padding: 40px 0;
-}
+    </main>
 
-.info-content {
-    display: flex;
-    gap: 30px;
-}
-
-.left-column {
-    flex: 0 0 300px; /* Largura fixa para a coluna da foto */
-    text-align: center;
-}
-
-.profile-pic {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 5px solid #a4d65a; /* Borda de destaque */
-}
-
-.name-tag {
-    background-color: #a4d65a; /* Cor de destaque */
-    color: #1a3b33; /* Texto escuro */
-    font-size: 1.8em;
-    font-weight: 700;
-    padding: 10px 0;
-    margin-top: -30px; /* Sobrepõe a foto levemente */
-    position: relative;
-    z-index: 10;
-    border-radius: 0 0 5px 5px;
-}
-
-.right-column {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.right-column p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-
-.right-column ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 30px;
-}
-
-.right-column ul li {
-    padding: 5px 0;
-}
-
-.right-column ul a {
-    color: #a4d65a; /* Links em verde destaque */
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.right-column ul a:hover {
-    text-decoration: underline;
-}
-
-.contact-box {
-    background-color: #1a3b33;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #a4d65a;
-}
-
-.contact-box h3 {
-    font-size: 1.2em;
-    color: #a4d65a;
-    margin-bottom: 10px;
-}
-
-.contact-box a {
-    color: #f0f0f0;
-    text-decoration: none;
-}
-
-.contact-box a:hover {
-    color: #a4d65a;
-}
-
-/* --- Seções Sobre e Formação --- */
-.about-section, .education-section {
-    padding: 60px 0;
-    background-color: #1a3b33;
-}
-
-.about-section h2, .education-section h2 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 600;
-    color: #a4d65a;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-/* Seção Sobre */
-.about-content {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    padding-bottom: 40px;
-}
-
-.about-pic {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    flex-shrink: 0; /* Impede que a imagem encolha */
-    border: 3px solid #f0f0f0;
-}
-
-.about-content p {
-    font-size: 1em;
-    text-align: justify;
-}
-
-/* Voltar ao Topo */
-.back-to-top {
-    display: block;
-    text-align: right;
-    color: #a4d65a;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.back-to-top:hover {
-    color: #f0f0f0;
-}
-
-/* Seção de Formação */
-.education-section {
-    background-color: #244941; /* Fundo mais escuro para esta seção */
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 20px;
-}
-
-.entry {
-    background-color: #1a3b33;
-    padding: 20px;
-    border-left: 5px solid #a4d65a; /* Linha de tempo visual */
-    border-radius: 0 5px 5px 0;
-}
-
-.entry:nth-child(even) {
-    /* Pode-se adicionar um estilo diferente para entradas pares, se desejar */
-}
-
-.entry .period {
-    color: #a4d65a;
-    font-size: 1.3em;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.entry .degree {
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.entry .institution, .entry .thesis, .entry .advisor, .entry .keywords {
-    font-size: 0.9em;
-    margin-bottom: 3px;
-    color: #ccc;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1a3b33;
-    font-size: 0.8em;
-    border-top: 1px solid #a4d65a;
-}
-
-/* --- Responsividade Básica --- */
-@media (max-width: 768px) {
-    .info-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-column {
-        flex: auto;
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .name-tag {
-        margin-top: -20px;
-    }
-
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-pic {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .about-content p {
-        text-align: left;
-    }
-}
+    <footer>
+        <p>Criado com base no design de Eloysa Paes | Contato: ademar.ferreira@ifpr.edu.br</p>
+    </footer>
+</body>
+</html>
