@@ -1,20 +1,28 @@
+/* Cores baseadas na análise do site original */
+:root {
+    --cor-fundo: #2F4F4F; /* Dark Slate Gray */
+    --cor-destaque: #9ACD32; /* YellowGreen */
+    --cor-texto: #FFFFFF;
+    --cor-secundaria: #203A3A; /* Um verde mais escuro para o cabeçalho/rodapé */
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #2F4F4F; /* Cor de fundo escura (Dark Slate Gray) */
-    color: #FFFFFF; /* Cor do texto principal */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #203A3A; /* Um pouco mais escuro para o cabeçalho */
+    background-color: var(--cor-secundaria);
     padding: 10px 0;
     text-align: center;
 }
 
 nav a {
-    color: #9ACD32; /* Cor de destaque (YellowGreen) para os links */
+    color: var(--cor-destaque);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -24,55 +32,51 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3A5F5F;
+    background-color: #3A5F5F; /* Um tom intermediário */
 }
 
 main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.content-box {
-    background-color: #FFFFFF; /* Caixa de conteúdo branca */
-    color: #333; /* Texto escuro dentro da caixa */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 h1 {
-    color: #2F4F4F;
+    color: var(--cor-destaque);
     text-align: center;
-    border-bottom: 2px solid #9ACD32;
+    border-bottom: 2px solid var(--cor-destaque);
     padding-bottom: 10px;
     margin-bottom: 30px;
+    font-size: 2.5em;
 }
 
 h2 {
-    color: #3A5F5F;
-    margin-top: 30px;
-    border-left: 4px solid #9ACD32;
-    padding-left: 10px;
+    color: var(--cor-destaque);
+    margin-top: 40px;
+    font-size: 1.8em;
 }
 
 h3 {
-    color: #555;
+    color: var(--cor-texto);
+    font-size: 1.2em;
+}
+
+article p {
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .formacao-item {
     margin-bottom: 20px;
     padding-left: 15px;
-    border-left: 2px solid #eee;
+    border-left: 2px solid var(--cor-destaque);
 }
 
 footer {
-    background-color: #203A3A;
+    background-color: var(--cor-secundaria);
     color: #ccc;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 0.8em;
 }
