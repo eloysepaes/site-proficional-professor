@@ -1,0 +1,259 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0; /* Texto principal em quase branco */
+    background-color: #1a3b33; /* Cor de fundo principal (Verde escuro) */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header e Título Principal --- */
+header {
+    background-color: #1a3b33;
+    padding-top: 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #a4d65a; /* Título em verde destaque */
+    border-bottom: 2px solid #a4d65a;
+    display: inline-block;
+}
+
+/* --- Seção de Informações do Professor (Topo) --- */
+.professor-info {
+    background-color: #244941; /* Um pouco mais claro que o fundo */
+    padding: 40px 0;
+}
+
+.info-content {
+    display: flex;
+    gap: 30px;
+}
+
+.left-column {
+    flex: 0 0 300px; /* Largura fixa para a coluna da foto */
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 5px solid #a4d65a; /* Borda de destaque */
+}
+
+.name-tag {
+    background-color: #a4d65a; /* Cor de destaque */
+    color: #1a3b33; /* Texto escuro */
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 10px 0;
+    margin-top: -30px; /* Sobrepõe a foto levemente */
+    position: relative;
+    z-index: 10;
+    border-radius: 0 0 5px 5px;
+}
+
+.right-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-column p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.right-column ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.right-column ul li {
+    padding: 5px 0;
+}
+
+.right-column ul a {
+    color: #a4d65a; /* Links em verde destaque */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.right-column ul a:hover {
+    text-decoration: underline;
+}
+
+.contact-box {
+    background-color: #1a3b33;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #a4d65a;
+}
+
+.contact-box h3 {
+    font-size: 1.2em;
+    color: #a4d65a;
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    color: #a4d65a;
+}
+
+/* --- Seções Sobre e Formação --- */
+.about-section, .education-section {
+    padding: 60px 0;
+    background-color: #1a3b33;
+}
+
+.about-section h2, .education-section h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #a4d65a;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Seção Sobre */
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+
+.about-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    border: 3px solid #f0f0f0;
+}
+
+.about-content p {
+    font-size: 1em;
+    text-align: justify;
+}
+
+/* Voltar ao Topo */
+.back-to-top {
+    display: block;
+    text-align: right;
+    color: #a4d65a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.back-to-top:hover {
+    color: #f0f0f0;
+}
+
+/* Seção de Formação */
+.education-section {
+    background-color: #244941; /* Fundo mais escuro para esta seção */
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.entry {
+    background-color: #1a3b33;
+    padding: 20px;
+    border-left: 5px solid #a4d65a; /* Linha de tempo visual */
+    border-radius: 0 5px 5px 0;
+}
+
+.entry:nth-child(even) {
+    /* Pode-se adicionar um estilo diferente para entradas pares, se desejar */
+}
+
+.entry .period {
+    color: #a4d65a;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.entry .degree {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.entry .institution, .entry .thesis, .entry .advisor, .entry .keywords {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a3b33;
+    font-size: 0.8em;
+    border-top: 1px solid #a4d65a;
+}
+
+/* --- Responsividade Básica --- */
+@media (max-width: 768px) {
+    .info-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column {
+        flex: auto;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .name-tag {
+        margin-top: -20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-pic {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .about-content p {
+        text-align: left;
+    }
+}
