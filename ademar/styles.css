@@ -1,9 +1,8 @@
-/* Cores baseadas na análise do site original */
 :root {
-    --cor-fundo: #2F4F4F; /* Dark Slate Gray */
-    --cor-destaque: #9ACD32; /* YellowGreen */
+    --cor-fundo: #2F4F4F;
+    --cor-destaque: #9ACD32;
     --cor-texto: #FFFFFF;
-    --cor-secundaria: #203A3A; /* Um verde mais escuro para o cabeçalho/rodapé */
+    --cor-secundaria: #203A3A;
 }
 
 body {
@@ -20,7 +19,6 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-
 nav a {
     color: var(--cor-destaque);
     text-decoration: none;
@@ -32,13 +30,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3A5F5F; /* Um tom intermediário */
+    background-color: #3A5F5F;
 }
-
-main {
     padding: 40px 20px;
     max-width: 900px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto;
 }
 
 h1 {
@@ -49,7 +45,6 @@ h1 {
     margin-bottom: 30px;
     font-size: 2.5em;
 }
-
 h2 {
     color: var(--cor-destaque);
     margin-top: 40px;
@@ -58,22 +53,38 @@ h2 {
 
 h3 {
     color: var(--cor-texto);
-    font-size: 1.2em;
+    margin-top: 30px;
+    font-size: 1.5em;
 }
-
-article p {
+p {
     margin-bottom: 20px;
     text-align: justify;
 }
 
-.formacao-item {
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border-left: 2px solid var(--cor-destaque);
+ul.main-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul.main-links li {
+    margin-bottom: 10px;
+}
+ul.main-links a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.main-links a:hover {
+    text-decoration: underline;
+}
+.intro-section {
+    padding: 20px;
 }
 
 footer {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-secundaria);
     color: #ccc;
     text-align: center;
     padding: 10px 0;
